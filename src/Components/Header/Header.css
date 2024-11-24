@@ -1,0 +1,75 @@
+/* General styles for the header */
+.header-container {
+    font-family: Arial, sans-serif;
+    background-color: #131415; /* Dark header background */
+    padding: 15px 30px; /* Slightly larger padding for more space */
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* More pronounced shadow for depth */
+    position: fixed; /* Fix the header to the top */
+    top: 0;
+    left: 0;
+    width: 97%;
+    z-index: 1000; /* Ensure the header stays on top of other elements */
+    transition: all 0.3s ease-in-out; /* Smooth transition for any changes */
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align the navigation items to the right */
+    align-items: center; /* Vertically align items */
+}
+
+/* Logo styling */
+.header-container .logo {
+    font-size: 24px;
+    color: #ffcc00; /* Yellow logo color */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer; /* Make logo clickable */
+    margin-right: auto; /* Push logo to the left side */
+}
+
+/* Navigation menu styles */
+.header-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Add space between items */
+    align-items: center;
+}
+
+.header-container li {
+    color: #fff; /* White text color */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and hover effect */
+}
+
+/* Hover effect for navigation items */
+.header-container li:hover {
+    color: #ffcc00; /* Bright yellow color on hover */
+    transform: scale(1.1); /* Slight scale-up effect on hover */
+}
+
+/* Responsive styles for the header */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack logo and menu items vertically */
+        padding: 10px 20px; /* Smaller padding on mobile */
+    }
+
+    .header-container ul {
+        flex-direction: column;
+        gap: 10px; /* Reduce gap between items on mobile */
+        align-items: flex-end; /* Align items to the right on smaller screens */
+    }
+
+    .header-container .logo {
+        font-size: 20px; /* Smaller logo font on mobile */
+        margin-bottom: 15px; /* Space below the logo */
+    }
+
+    .header-container li {
+        font-size: 16px; /* Slightly smaller font size for mobile */
+    }
+}

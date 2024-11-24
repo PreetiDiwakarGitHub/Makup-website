@@ -1,0 +1,58 @@
+/* Container for Product Images */
+.ProductImage {
+    display: flex;
+    flex-wrap: wrap; /* Ensures wrapping of images for responsiveness */
+    gap: 30px; /* Space between items */
+    justify-content: center; /* Center align all images */
+    padding: 20px; /* Add padding around the container */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners for the entire section */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Styling for Images */
+  .ProductImage img {
+    height: 25rem; /* Maintain fixed height */
+    width: 25rem; /* Maintain fixed width */
+    margin: 20px; /* Space around each image */
+    padding: 10px; /* Space inside the image's container */
+    border-radius: 15px; /* Add rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for each image */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+  }
+  
+  /* Hover Effect for Images */
+  .ProductImage img:hover {
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  /* Heading Style */
+  .ProductImage h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #222; /* Darker color for better readability */
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%; /* Span the full width to center-align */
+    text-transform: uppercase; /* Add uppercase styling */
+    letter-spacing: 2px; /* Add spacing between letters */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .ProductImage img {
+      margin: 5px; /* Reduce space between images */
+      padding: 5px; /* Reduce internal padding */
+      border-radius: 10px; /* Slightly smaller rounded corners */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ProductImage img {
+      margin: 3px; /* Further reduce spacing for smaller screens */
+      padding: 3px;
+    }
+  }
+  

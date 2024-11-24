@@ -1,0 +1,74 @@
+/* Styling for the navbar container remains the same */
+.navbar-container {
+    font-family: Arial, sans-serif;
+    background-color: #e7dada;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    z-index: 1000;
+    border: 1px solid #e0e0e0;
+    margin-top: 50px;
+}
+
+/* Styling for the search input */
+.navbar-container input[type="text"] {
+    width: 300px;
+    padding: 8px 20px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 10px;
+}
+
+/* Focused state for the search bar */
+.navbar-container input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Styling for the search button */
+.navbar-container button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for the button */
+.navbar-container button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: translateY(-2px); /* Slight upward movement */
+}
+
+/* Active effect for the button */
+.navbar-container button:active {
+    background-color: #004085; /* Even darker blue */
+    transform: translateY(0); /* Reset position */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navbar-container input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

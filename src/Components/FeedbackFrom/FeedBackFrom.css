@@ -1,0 +1,66 @@
+/* Feedback Form Styling */
+.feedback-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+.feedback-form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.feedback-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feedback-form-container label {
+    font-weight: bold;
+    color: #555;
+}
+
+.feedback-form-container input,
+.feedback-form-container textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.feedback-form-container input:focus,
+.feedback-form-container textarea:focus {
+    border-color: #00bcd4;
+    outline: none;
+}
+
+.feedback-form-container button {
+    padding: 10px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedback-form-container button:hover {
+    background-color: #007e8c;
+}
+
+.success-message {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

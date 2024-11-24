@@ -1,0 +1,60 @@
+/* Container for the entire slider */
+.slider {
+    position: relative;
+    width: 100%;  /* Make the slider responsive to the container's width */
+    height: 700px; /* Fixed height for the slider */
+    margin: auto;
+    overflow: hidden;  /* Hide images that go outside the slider container */
+}
+
+/* The image container that will hold the images */
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;  /* Smooth transition when images change */
+}
+
+/* Ensuring images adjust to container while maintaining aspect ratio */
+.slider-container img {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;  /* Ensures images maintain their aspect ratio while filling the area */
+}
+
+/* Navigation buttons */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;  /* Position left button */
+}
+
+.next {
+    right: 10px;  /* Position right button */
+}
+
+/* Hover effects for navigation buttons */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Optional: Style for the image caption if needed */
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
